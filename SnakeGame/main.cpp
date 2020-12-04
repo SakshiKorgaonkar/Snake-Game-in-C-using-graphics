@@ -57,15 +57,9 @@ for(;;){
     else if(GetAsyncKeyState(VK_LEFT)){ d=2;}
     else if(GetAsyncKeyState(VK_UP)){ d=3;}
     else if(GetAsyncKeyState(VK_DOWN)) {d=4;}
-    else{d=0;}
+    else if(GetAsyncKeyState(VK_SPACE)) {delay(1000);}
+   
     switch(d){
-    case 0:
-      if(dir==1){x[0]=x[0]+10;}
-      else if(dir==2){x[0]=x[0]-10;}
-      else if(dir==3){ y[0]=y[0]-10;}
-      else if(dir==4) {y[0]=y[0]+10;}
-      else{d=0;}
-      break;
     case 1:
         dir==1;
            x[0]=x[0]+10;
